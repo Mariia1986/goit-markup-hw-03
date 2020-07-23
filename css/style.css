@@ -58,6 +58,7 @@ body {
 /*Хедер*/
 .nav-container {
   display: flex;
+  height: 80px;
   align-items: center;
   background-color: cadetblue;
 }
@@ -114,8 +115,11 @@ body {
 
 .hero {
   background-color: var(--primary-text-color);
+  text-align: center;
 }
 .page-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -125,13 +129,17 @@ body {
   color: var(--primary-white-color);
 }
 .hero-btn {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
+  border-radius: 4px;
+  border-color: transparent;
   background-color: var(--accent-color);
 }
 
@@ -213,6 +221,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--background-button-color);
+  background-color: transparent;
 }
 .button:hover,
 .button:focus {

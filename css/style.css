@@ -59,6 +59,7 @@ body {
 .nav-container {
   display: flex;
   align-items: center;
+  background-color: cadetblue;
 }
 .nav-list,
 .navigation {
@@ -66,10 +67,10 @@ body {
   align-items: center;
 }
 
-.nav-list li {
+.nav-list .nav-list-item + .nav-list-item {
   margin-left: 50px;
 }
-.nav-list:first-child {
+.nav-list-item:first-child {
   margin-left: 70px;
 }
 .logo {
@@ -87,7 +88,7 @@ body {
   color: var(--title-text-color);
 }
 
-.nav-list-item {
+.nav-list-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;

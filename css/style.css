@@ -204,6 +204,8 @@ body {
 /*Секция "Наша команда"*/
 
 .person-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -211,9 +213,19 @@ body {
   color: var(--title-text-color);
 }
 .profesion {
+  margin-top: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+.social-networks {
+  width: calc((100% - 10px * 3) / 4);
+  margin-right: 10px;
+  text-align: center;
+}
+.social-networks:nth-child(4n) {
+  margin-right: 0px;
 }
 /*Секция "Футер"*/
 .footer {

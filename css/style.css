@@ -55,10 +55,12 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.section {
+  padding: 94px 0;
+}
 /*Хедер*/
 .nav-container {
   display: flex;
-  height: 80px;
   align-items: center;
   background-color: cadetblue;
 }
@@ -75,7 +77,7 @@ body {
   margin-left: 70px;
 }
 .logo {
-  display: flex;
+  padding: 25px 0;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -145,6 +147,8 @@ body {
 
 /*Секция "Особенности"*/
 .section-title {
+  margin-bottom: 50px;
+  margin-top: 0;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 28px;
@@ -152,7 +156,21 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.section-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-list-item {
+  width: calc((100% - 30px * 3) / 4);
+  margin-right: 30px;
+}
+.section-list-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
 .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -160,16 +178,28 @@ body {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-
+.section-img {
+  margin-bottom: 30px;
+}
 .section-description {
+  margin: 0 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
 /*Секция "Чем мы занимаемся"*/
 .activity {
+  margin-bottom: 0;
   color: var(--primary-white-color);
   background-color: var(--activity-background-color);
+}
+.list-item-section {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+}
+.list-item-section:nth-child(3n) {
+  margin-right: 0px;
 }
 /*Секция "Наша команда"*/
 

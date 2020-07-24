@@ -227,9 +227,34 @@ body {
 .social-networks:nth-child(4n) {
   margin-right: 0px;
 }
+/*секция "Постянные клиенты"*/
+.section-list-clients {
+  width: calc((100% - 30px * 5) / 6);
+  margin-right: 30px;
+  text-align: center;
+}
+.section-list-clients:nth-child(6n) {
+  margin-right: 0px;
+}
 /*Секция "Футер"*/
 .footer {
   background-color: var(--footer-background-color);
+}
+.footer-box {
+  align-items: center;
+}
+.join-box {
+  margin-right: 94px;
+}
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 .logo-end-footer {
   color: var(--primary-white-color);
@@ -244,7 +269,13 @@ body {
 .adress {
   color: var(--primary-white-color);
 }
+.adress-box {
+  padding: 60px 0;
+  margin-right: 69px;
+}
 .join {
+  margin-top: 0px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

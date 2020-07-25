@@ -322,6 +322,7 @@ body {
   }
   
 .project-link {
+  display: inline-block;
   text-decoration: none;
   color: var(--primary-text-color);
 }

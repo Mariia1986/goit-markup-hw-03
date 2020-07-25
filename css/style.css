@@ -335,6 +335,8 @@ body {
 .projects-title {
   margin-top: 20px;
   margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-weight: 700d;
   font-size: 18px;
   line-height: 2;
@@ -345,6 +347,8 @@ body {
 .project-name {
   margin-top: 0px;
   margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;

@@ -219,14 +219,11 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.social-networks {
-  width: calc((100% - 10px * 3) / 4);
-  margin-right: 10px;
-  text-align: center;
+.section-list .social-networks + .social-networks{
+    margin-left: 10px;
+   text-align: center;
 }
-.social-networks:nth-child(4n) {
-  margin-right: 0px;
-}
+ 
 /*секция "Постянные клиенты"*/
 .section-list-clients {
   width: calc((100% - 30px * 5) / 6);
@@ -241,14 +238,15 @@ body {
   background-color: var(--footer-background-color);
 }
 .footer-box {
-  align-items: center;
+  align-items: baseline;
+  padding: 60px 0;
 }
 .join-box {
   margin-right: 94px;
 }
 .logo-footer {
-  display: block;
-  margin-bottom: 20px;
+   display: block;
+    margin-bottom: 20px;
   padding: 0px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -260,7 +258,7 @@ body {
   color: var(--primary-white-color);
 }
 .footer-contacts {
-  font-weight: 400;
+    font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -270,7 +268,7 @@ body {
   color: var(--primary-white-color);
 }
 .adress-box {
-  padding: 60px 0;
+  
   margin-right: 69px;
 }
 .join {
@@ -285,8 +283,12 @@ body {
 }
 /*Страница "Портфолио"*/
 .button {
+  display: block;
+  min-width: 73px;
+  padding: 6px 22px;
+  border-radius: 4px;
   border-style: none;
-  border-color: none;
+  border-color: transparent;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -294,13 +296,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--background-button-color);
-  background-color: transparent;
+  
 }
 .button:hover,
 .button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
+.button-list{
+  display: flex;
+  justify-content: center;
+  }
+  .button-list .button-list-item:not(:last-child) {
+    margin-right: 8px;
+  }
 .project-link {
   text-decoration: none;
   color: var(--primary-text-color);

@@ -17,8 +17,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 3px solid blue;
-}
+  }
 /*Общие*/
 
 body {
@@ -62,8 +61,7 @@ body {
 .nav-container {
   display: flex;
   align-items: center;
-  background-color: cadetblue;
-}
+  }
 .nav-list,
 .navigation {
   display: flex;
@@ -143,6 +141,7 @@ body {
   border-radius: 4px;
   border-color: transparent;
   background-color: var(--accent-color);
+  border: 0px;
 }
 
 /*Секция "Особенности"*/
@@ -310,6 +309,18 @@ body {
   .button-list .button-list-item:not(:last-child) {
     margin-right: 8px;
   }
+  .button-section{
+    margin-bottom: 50px;
+  }
+  .portfolio-list-item{
+    width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  }
+  .portfolio-list-item:nth-child(3n) {
+  margin-right: 0px;
+  }
+  
 .project-link {
   text-decoration: none;
   color: var(--primary-text-color);
@@ -322,6 +333,8 @@ body {
 }
 
 .projects-title {
+  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: 700d;
   font-size: 18px;
   line-height: 2;
@@ -330,6 +343,8 @@ body {
 }
 
 .project-name {
+  margin-top: 0px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;

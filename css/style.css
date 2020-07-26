@@ -114,6 +114,7 @@ body {
 /*Герой*/
 
 .hero {
+  padding: 200px 0;
   background-color: var(--primary-text-color);
   text-align: center;
 }
@@ -145,6 +146,9 @@ body {
 }
 
 /*Секция "Особенности"*/
+.features{
+  padding: 94px 0px 0px;
+}
 .section-title {
   margin-bottom: 50px;
   margin-top: 0;
@@ -189,10 +193,12 @@ body {
 
 /*Секция "Чем мы занимаемся"*/
 .activity {
+  text-align: center;
   margin-bottom: 0;
   color: var(--primary-white-color);
   background-color: var(--activity-background-color);
 }
+
 .list-item-section {
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
@@ -201,10 +207,13 @@ body {
   margin-right: 0px;
 }
 /*Секция "Наша команда"*/
-
+.section-team {
+  background-color: var(--background-button-color);
+}
 .person-name {
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -212,6 +221,7 @@ body {
   color: var(--title-text-color);
 }
 .profesion {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 16px;
   font-size: 16px;
